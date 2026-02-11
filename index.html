@@ -1,0 +1,316 @@
+<!doctype html>
+<html lang="ja">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Self Story | 私の物語</title>
+
+  <!-- かわいい丸文字（漢字対応） -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=M+PLUS+Rounded+1c:wght@300;400;500;700&family=Zen+Maru+Gothic:wght@300;400;500;700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+  <a class="skip" href="#main">本文へスキップ</a>
+
+  <header class="topbar">
+    <div class="topbar__inner">
+      <div class="brand">
+        <div class="brand__mark" aria-hidden="true">✦</div>
+        <div class="brand__text">
+          <div class="brand__title">私のポートフォリオ</div>
+          <div class="brand__subtitle">AI / 企画 / 運用 / 学習と実装</div>
+        </div>
+      </div>
+
+      <div class="topbar__actions">
+        <button class="btn btn--ghost" id="btnToTop" type="button" title="上へ">↑</button>
+      </div>
+    </div>
+  </header>
+
+  <div class="layout">
+    <aside class="sidebar" aria-label="ナビゲーション">
+      <nav class="nav">
+        <a class="nav__link is-active" href="#home">ホーム</a>
+        <a class="nav__link" href="#life">人生背景</a>
+        <a class="nav__link" href="#experience">職務経験</a>
+        <a class="nav__link" href="#ai">AIと私</a>
+        <a class="nav__link" href="#works">代表作（YouTube）</a>
+        <a class="nav__link" href="#likes">好きな物</a>
+        <a class="nav__link" href="#ending">ラスト</a>
+      </nav>
+
+      <div class="card sidecard">
+        <div class="sidecard__title">クイック情報</div>
+        <ul class="meta">
+          <li><span>強み</span><b>好きな分野への集中力 / 収集力 / 実行力</b></li>
+          <li><span>得意</span><b>AI活用・企画運営・資料作成・運用改善</b></li>
+          <li><span>方針</span><b>必要なら、どこまでも話します</b></li>
+        </ul>
+      </div>
+
+      <footer class="sidefooter">
+        <small>© <span id="year"></span> self story</small>
+      </footer>
+    </aside>
+
+    <main id="main" class="main">
+      <!-- HERO -->
+      <section id="home" class="section hero" tabindex="-1">
+        <div class="hero__inner">
+          <div class="hero__badge">PC優先 / 読みやすさ重視 / 1ページ完結</div>
+          <h1 class="hero__title">こんにちは。<br>私は <span class="accent">AIが大好き</span> な人です。</h1>
+          <p class="hero__lead">
+            テンプレ感のない整理された構成で、面接官が“欲しい情報”に迷わず辿り着けるように作りました。
+          </p>
+
+          <div class="hero__cta">
+            <a class="btn" href="#works">YouTube（代表作）へ</a>
+            <a class="btn btn--ghost" href="#experience">職務経験へ</a>
+          </div>
+
+          <div class="hero__note">
+            ※このページは「項目をクリックすると該当セクションへジャンプ」します。スクロールもOK。
+          </div>
+        </div>
+      </section>
+
+      <!-- 人生背景 -->
+      <section id="life" class="section" tabindex="-1">
+        <header class="section__head">
+          <h2 class="section__title">人生背景</h2>
+          <p class="section__desc">AIとの出会いと、集中力の話。</p>
+        </header>
+
+        <article class="card">
+          <p>
+            高校生の頃からAIが大好きで、人工無能を初めとした画像生成AIや動画生成AIなどに触れてきました。
+            集中力は好きな物に対しては抜群のパフォーマンスを発揮することができ、
+            中学2年生の頃には、学校に通いながらも心理学に没頭して3ヶ月周りからの連絡の返事を忘れていた程に
+            集中力には自信があります。
+しかしながら、バイブコーディングや現在作成しているホームページ系の知識は全くありません。それで食ってきたという訳では無い、完全なる趣味程度の初心者なのでこのホームページも簡素になっております。また、スマホで作成していますので、PC向けに仕上がっているのかは不明です。ご了承ください。
+          </p>
+          <p class="muted">
+            その他の「人生物語」に関してはおいおい話しましょう。貴社が望むなら、どこまでも話しましょう。
+          </p>
+        </article>
+      </section>
+
+      <!-- 職務経験 -->
+      <section id="experience" class="section" tabindex="-1">
+        <header class="section__head">
+          <h2 class="section__title">職務経験</h2>
+          <p class="section__desc">やってきたことを、整理して読みやすく。</p>
+        </header>
+
+        <div class="grid">
+          <article class="card">
+            <div class="pill">株式会社アレックス</div>
+            <a class="link" href="https://arex-web.co.jp/sp/index.html" target="_blank" rel="noopener noreferrer">
+              公式サイトを見る
+            </a>
+
+            <h3 class="card__title">業務内容（抜粋）</h3>
+            <ul class="list">
+              <li>商業ビル・貸会議室オーナー対応 / 業者管理（清掃・立体駐車場・EV等）</li>
+              <li>会計（弥生会計・振替伝票） / 接待 / 受付 / クレーム対応</li>
+              <li>HP内容変更・アイディア出し / 書類作成（お知らせ、マニュアル、重要書類）</li>
+              <li>年末年始挨拶回り / 部下育成 / 買い出し（オンライン含む）</li>
+              <li>肉体労働（館内チェック、屋上清掃など）</li>
+              <li>その他雑務</li>
+            </ul>
+
+            <h3 class="card__title">退職理由</h3>
+            <p>
+              東京にいる彼氏や、友人達の所へ行きたかった為。円満退社で、青色の薔薇の花束を退職時に貰いました。
+              「東京に行って彼氏さんと絶対に幸せになってね！」と、上司や部下にエールまでいただきました。
+            </p>
+          </article>
+
+          <article class="card">
+            <div class="pill">合同会社バギズム</div>
+            <a class="link" href="https://www.g-bagism.com/" target="_blank" rel="noopener noreferrer">
+              公式サイトを見る
+            </a>
+
+            <h3 class="card__title">担当・活動（要約）</h3>
+            <ul class="list">
+              <li>プロンプトエンジニアにスカウト経験 / AI活用の独学（高校時代から）</li>
+              <li>ChatGPT・NijiJourney等複数AIを使い分け / 動画生成AIも対応</li>
+              <li>AIアイドルプロジェクトの企画・制作支援</li>
+              <li>NijijourneyとChatGPTプロンプト(自然言語)の講習（複数講座）や弟子育成経験有り</li>
+              <li>AIキャラクターのプロンプト設計（乱数表現含む）</li>
+              <li>資料作成・PowerPoint制作をAIで効率化</li>
+              <li>イベント企画運営、SNS担当など</li>
+            </ul>
+
+            <div class="note">
+              <b>補足：</b> 最新AIにも対応可能（必要ならサブスク費用は経費計上希望）。触っていないAIでも情報更新に合わせて積極的に習得できます。
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <!-- AIと私 -->
+      <section id="ai" class="section" tabindex="-1">
+        <header class="section__head">
+          <h2 class="section__title">AIと私</h2>
+          <p class="section__desc">“クセ”を読む / 追従する / 形にする。</p>
+        </header>
+
+        <article class="card">
+          <p>
+            私はAIを「普通に遊ぶ」よりも「学習・検証・改善」へ寄せて使うタイプです。
+            例えば、マルコフ連鎖を利用した学習（Aを学習させたいならAB・AC・AD…のように）なども独学で実践してきました。
+          </p>
+          <p>
+            慣れているAIなら大型アップデートがなくても挙動の変化を肌感覚で察しやすく、
+            主語述語を明確にする／日本語で通りにくい米国産AIは英語表記にする等、通し方も分かります。
+          </p>
+
+          <div class="tags" aria-label="扱えるAI">
+            <span class="tag">ChatGPT</span>
+            <span class="tag">NijiJourney</span>
+            <span class="tag">Midjourney</span>
+            <span class="tag">Pix Verse</span>
+            <span class="tag">Gemini</span>
+            <span class="tag">Grok</span>
+            <span class="tag">Sora</span>
+            <span class="tag">ほか習得可</span>
+          </div>
+
+          <p class="muted">
+            AIエージェントやAIを使ったプログラミング方向にも興味があります。必要なら学習して実装まで持っていきます。
+          </p>
+        </article>
+      </section>
+
+      <!-- 代表作（YouTube） -->
+      <section id="works" class="section" tabindex="-1">
+        <header class="section__head">
+          <h2 class="section__title">代表作(YouTube)</h2>
+          <p class="section__desc">面接官へ：クリックで外部タブ表示。</p>
+        </header>
+
+        <div class="grid grid--2">
+          <article class="card">
+            <h3 class="card__title">中川奈美様との共同作</h3>
+            <p class="muted">鬼滅の刃の「竈門炭治郎のうた」「竈門禰豆子のうた」で有名なあの方との共同作です。社会人初のお仕事でもありました。</p>
+            <a class="btn btn--ghost" href="https://youtu.be/NERzGqzgQyg?si=w6RFTOqwu66MMotv" target="_blank" rel="noopener noreferrer">
+              ボタンクリックで視聴する
+            </a>
+          </article>
+
+          <article class="card">
+            <h3 class="card__title">中村大志様との共同作</h3>
+            <p class="muted">私が「プロ声優の撮影現場」を初めて目の当たりにした思い出深い作品です。AIと合作で台本を書き、プロの方に読んでいただく。そのような貴重な体験をしたお仕事でした。</p>
+            <a class="btn btn--ghost" href="https://youtu.be/KNh8F56Ff3A?si=0LG1zSxBt8xqrUin" target="_blank" rel="noopener noreferrer">
+              ボタンクリックで視聴する
+            </a>
+          </article>
+        </div>
+
+        <article class="card">
+          <h3 class="card__title">YouTubeリンクについて</h3>
+          <p>
+            私の代表作はYouTubeに公開しています。外部リンクのため、クリックで新しいタブを開く仕様です。
+            確認しやすいよう、ボタン形式にしています。
+          </p>
+        </article>
+      </section>
+
+      <!-- 好きな物 -->
+      <section id="likes" class="section" tabindex="-1">
+        <header class="section__head">
+          <h2 class="section__title">好きな物</h2>
+          <p class="section__desc">“人柄”が伝わるセクション。押すと遊びもある。</p>
+        </header>
+
+        <div class="grid grid--3">
+          <article class="card">
+            <h3 class="card__title">おりょうり（彼氏に教えてもらってる）</h3>
+            <a class="imglink" href="https://ibb.co/PZ7DdQvt" target="_blank" rel="noopener noreferrer">
+              <img class="img" src="https://i.ibb.co/nsHPFCNR/IMG-1992.jpg" alt="おりょうりの写真" loading="lazy">
+            </a>
+          </article>
+
+          <article class="card">
+            <h3 class="card__title">くまさん</h3>
+            <a class="imglink" href="https://ibb.co/d4V91bD7" target="_blank" rel="noopener noreferrer">
+              <img class="img" src="https://i.ibb.co/F4yvNszn/IMG-1735.jpg" alt="くまさんの写真" loading="lazy">
+            </a>
+          </article>
+
+          <article class="card">
+            <h3 class="card__title">美術部部長もやってました</h3>
+            <a class="imglink" href="https://ibb.co/nG2FDr8" target="_blank" rel="noopener noreferrer">
+              <img class="img" src="https://i.ibb.co/8C3HjM4/IMG-0855-Original.jpg" alt="美術部の思い出" loading="lazy">
+            </a>
+          </article>
+        </div>
+
+        <article class="card">
+          <h3 class="card__title">彼氏の絵（ボタンで降ってくる）</h3>
+          <p class="muted">
+            ボタンを押すと、彼氏の絵が上から降ってきます（約5秒）。<br>
+            かれしだいすき
+          </p>
+          <button class="btn" id="btnRain" type="button">降らせる ☁️</button>
+
+          <div class="preview">
+            <a class="imglink"
+href="https://ibb.co/Rk7HnnpJ"
+target="_blank" rel="noopener noreferrer">
+  <img class="img img--small"
+  src="https://i.ibb.co/Mx9NTTDJ/IMG-3427.jpg"
+  alt="彼氏の絵"
+  loading="lazy">
+</a>
+          </div>
+        </article>
+      </section>
+
+      <!-- ラスト -->
+      <section id="ending" class="section" tabindex="-1">
+        <header class="section__head">
+          <h2 class="section__title">ラスト</h2>
+          <p class="section__desc">最後に。</p>
+        </header>
+
+        <article class="card">
+          <p>
+            ここまで読んでくれてありがとうございます。最後は、私がかつて本業にしていた「AIイラスト」で〆を行いたいと思います。
+          </p>
+        </article>
+
+        <div class="ending">
+          <a class="imglink" href="https://ibb.co/21c6Ztxv" target="_blank" rel="noopener noreferrer">
+            <img class="img img--hero" src="https://i.ibb.co/sdsPWwnK/6834-20260211015521.png" alt="ラストの画像" loading="lazy">
+          </a>
+        </div>
+
+        <footer class="footer">
+          <div class="footer__box">
+            <div class="footer__title">連絡先</div>
+            <div class="footer__row">
+              <span class="muted">Email：</span><b>guroriosa0528@gmail.com</b>
+            </div>
+            <div class="footer__row">
+              <span class="muted">Tel：</span><b>090-9171-0528</b>
+            </div>
+          </div>
+        </footer>
+      </section>
+    </main>
+  </div>
+
+  <!-- 彼氏の絵：雨を降らせるためのレイヤ -->
+  <div id="rainLayer" class="rain" aria-hidden="true"></div>
+
+  <script src="script.js"></script>
+</body>
+</html>
