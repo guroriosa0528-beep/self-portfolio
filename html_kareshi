@@ -1,0 +1,41 @@
+<!doctype html>
+<html lang="ja">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>彼氏の絵（降ってくる）</title>
+
+  <!-- かわいい丸文字（漢字対応） -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=M+PLUS+Rounded+1c:wght@300;400;500;700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+  <main class="wrap">
+    <section class="card">
+      <h1 class="title">彼氏の絵（ボタンで降ってくる）</h1>
+      <p class="desc">
+        ボタンを押すと、彼氏の絵が上から降ってきます（約5秒）。
+      </p>
+
+      <div class="actions">
+        <button class="btn" id="btnRain" type="button">降らせる ☁️</button>
+      </div>
+
+      <div class="preview">
+        <a class="imglink" href="https://ibb.co/Rk7HnnpJ" target="_blank" rel="noopener noreferrer">
+          <img class="img" src="https://i.ibb.co/Mx9NTTDJ/IMG-3427.jpg" alt="彼氏の絵" loading="lazy">
+        </a>
+      </div>
+    </section>
+  </main>
+
+  <!-- 降らせる用レイヤ -->
+  <div id="rainLayer" class="rain" aria-hidden="true"></div>
+
+  <script src="script.js"></script>
+</body>
+</html>
